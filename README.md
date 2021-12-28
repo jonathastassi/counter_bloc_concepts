@@ -34,7 +34,18 @@ Em resumo, a grande diferença dos 2, é que o cubit é orientado por funções 
 
 - [Bloc](https://github.com/jonathastassi/counter_bloc_concepts/blob/main/lib/bloc_example/bloc/counter_bloc.dart) - São criados eventos, onde é possível definir comportamentos de acordo com cada evento, e esses eventos podem manipular o estado
 - [Cubit](https://github.com/jonathastassi/counter_bloc_concepts/blob/main/lib/cubit_example/cubit/counter_cubit.dart) - São criados métodos, que tem objetivo de manipular o estado
-
+  
+## Testes unitários e de widgets
+  - [Documentação](https://bloclibrary.dev/#/testing?id=testing)
+  - [Teste do bloc](https://github.com/jonathastassi/counter_bloc_concepts/blob/main/test/bloc_example/bloc/counter_bloc_test.dart)
+  - [Teste de view/page](https://github.com/jonathastassi/counter_bloc_concepts/blob/main/test/bloc_example/view/counter_bloc_view_test.dart)
+  
+## Resumo para usar bloc/cubit no projeto
+  - Instalar pacote [flutter_bloc](https://pub.dev/packages/flutter_bloc)
+  - Criar um BlocProvider
+  - Usar BlocConsumer, BlocBuilder ou BlocListener para consumir o cubit/bloc declarado no BlocProvider
+  - Para testes, instalar [bloc_test](https://pub.dev/packages/bloc_test) e [test](https://pub.dev/packages/test)
+  
 ## Demonstração
 
 <div style="width: 100%; text-align: center;">
