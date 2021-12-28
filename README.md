@@ -1,5 +1,9 @@
 # counter_bloc_concepts
 
+<div style="width: 100%; text-align: center;">
+<img src="https://bloclibrary.dev/assets/cubit_architecture_full.png" alt="Fluxo do bloc">
+</div>
+
 Criei esse projeto para colocar em prática o conhecimento sobre a utilização do Bloc.
 
 ## Materiais de estudo
