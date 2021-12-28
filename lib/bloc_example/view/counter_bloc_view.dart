@@ -14,6 +14,7 @@ class CounterBlocView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      key: key,
       appBar: AppBar(
         title: Text(title),
       ),
@@ -45,6 +46,7 @@ class CounterBlocView extends StatelessWidget {
               onPressed: () {
                 context.read<CounterBloc>().add(CounterDecrementPressed());
               },
+              key: const ValueKey('remove_button'),
               icon: const Icon(Icons.remove),
               label: const Text('1'),
             ),
@@ -52,6 +54,7 @@ class CounterBlocView extends StatelessWidget {
               onPressed: () {
                 context.read<CounterBloc>().add(CounterIncrementPressed());
               },
+              key: const ValueKey('add_button'),
               icon: const Icon(Icons.add),
               label: const Text('1'),
             )
