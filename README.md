@@ -37,8 +37,8 @@ Em resumo, a grande diferença dos 2, é que o cubit é orientado por funções 
   
 ## Testes unitários e de widgets
   - [Documentação](https://bloclibrary.dev/#/testing?id=testing)
-  - [Teste do bloc](https://github.com/jonathastassi/counter_bloc_concepts/blob/main/test/bloc_example/bloc/counter_bloc_test.dart)
-  - [Teste de view/page](https://github.com/jonathastassi/counter_bloc_concepts/blob/main/test/bloc_example/view/counter_bloc_view_test.dart)
+  - [Exemplo de teste do bloc](https://github.com/jonathastassi/counter_bloc_concepts/blob/main/test/bloc_example/bloc/counter_bloc_test.dart)
+  - [Exemplo de teste de view/page](https://github.com/jonathastassi/counter_bloc_concepts/blob/main/test/bloc_example/view/counter_bloc_view_test.dart)
   
 ## Resumo para usar bloc/cubit no projeto
   - Instalar pacote [flutter_bloc](https://pub.dev/packages/flutter_bloc)
