@@ -38,5 +38,5 @@ Em resumo, a grande diferença dos 2, é que o cubit é orientado por funções 
 ## Demonstração
 
 <div style="width: 100%; text-align: center;">
-<img src="https://github.com/jonathastassi/fipe_car_consult/blob/master/demonstration/counter.gif" alt="Demonstração">
+<img src="https://github.com/jonathastassi/counter_bloc_concepts/blob/main/demonstration/counter.gif" alt="Demonstração">
 </div>
