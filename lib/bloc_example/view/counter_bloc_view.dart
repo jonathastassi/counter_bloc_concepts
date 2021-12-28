@@ -1,5 +1,5 @@
-import 'package:counter_bloc_concepts/bloc/counter_bloc.dart';
-import 'package:counter_bloc_concepts/widgets/menu.dart';
+import 'package:counter_bloc_concepts/bloc_example/bloc/counter_bloc.dart';
+import 'package:counter_bloc_concepts/shared/widgets/menu.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -45,15 +45,15 @@ class CounterBlocView extends StatelessWidget {
               onPressed: () {
                 context.read<CounterBloc>().add(CounterDecrementPressed());
               },
-              icon: Icon(Icons.remove),
-              label: Text('1'),
+              icon: const Icon(Icons.remove),
+              label: const Text('1'),
             ),
             ElevatedButton.icon(
               onPressed: () {
                 context.read<CounterBloc>().add(CounterIncrementPressed());
               },
-              icon: Icon(Icons.add),
-              label: Text('1'),
+              icon: const Icon(Icons.add),
+              label: const Text('1'),
             )
           ],
         ),

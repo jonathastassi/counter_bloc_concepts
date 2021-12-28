@@ -1,5 +1,5 @@
-import 'package:counter_bloc_concepts/view/bloc/counter_bloc_page.dart';
-import 'package:counter_bloc_concepts/view/cubit/counter_cubit_page.dart';
+import 'package:counter_bloc_concepts/bloc_example/view/counter_bloc_page.dart';
+import 'package:counter_bloc_concepts/cubit_example/view/counter_cubit_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {

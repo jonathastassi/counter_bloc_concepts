@@ -1,13 +1,12 @@
-import 'package:counter_bloc_concepts/bloc/counter_bloc.dart';
-import 'package:counter_bloc_concepts/cubit/counter_cubit.dart';
-import 'package:counter_bloc_concepts/widgets/menu.dart';
+import 'package:counter_bloc_concepts/bloc_example/bloc/counter_bloc.dart';
+import 'package:counter_bloc_concepts/shared/widgets/menu.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-class CounterCubitView extends StatelessWidget {
+class CounterBlocView extends StatelessWidget {
   final String title;
 
-  const CounterCubitView({
+  const CounterBlocView({
     Key? key,
     required this.title,
   }) : super(key: key);
@@ -22,7 +21,7 @@ class CounterCubitView extends StatelessWidget {
         context: context,
       ),
       body: Center(
-        child: BlocConsumer<CounterCubit, int>(
+        child: BlocConsumer<CounterBloc, int>(
           listener: (_, state) {
             if (state % 2 == 0) {
               ScaffoldMessenger.of(context).showSnackBar(
@@ -44,21 +43,14 @@ class CounterCubitView extends StatelessWidget {
           children: [
             ElevatedButton.icon(
               onPressed: () {
-                context.read<CounterCubit>().decrement();
+                context.read<CounterBloc>().add(CounterDecrementPressed());
               },
               icon: const Icon(Icons.remove),
               label: const Text('1'),
             ),
             ElevatedButton.icon(
               onPressed: () {
-                context.read<CounterCubit>().error();
-              },
-              icon: const Icon(Icons.error),
-              label: const Text('Error'),
-            ),
-            ElevatedButton.icon(
-              onPressed: () {
-                context.read<CounterCubit>().increment();
+                context.read<CounterBloc>().add(CounterIncrementPressed());
               },
               icon: const Icon(Icons.add),
               label: const Text('1'),
