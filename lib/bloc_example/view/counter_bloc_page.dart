@@ -1,5 +1,5 @@
 import 'package:counter_bloc_concepts/bloc_example/bloc/counter_bloc.dart';
-import 'package:counter_bloc_concepts/presentation/view/bloc/counter_bloc_view.dart';
+import 'package:counter_bloc_concepts/bloc_example/view/counter_bloc_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 

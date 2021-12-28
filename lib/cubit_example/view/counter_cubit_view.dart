@@ -32,7 +32,12 @@ class CounterCubitView extends StatelessWidget {
             }
           },
           builder: (context, state) {
-            return Text(state.toString());
+            return Text(
+              state.toString(),
+              style: const TextStyle(
+                fontSize: 32,
+              ),
+            );
           },
         ),
       ),

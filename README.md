@@ -15,9 +15,9 @@ Se você não conhece o bloc, recomendo estudar a documentação e assistir o v�
 - <strong>BlocProvider</strong> - Esse widget é responsável por prover o cubit/bloc na árvore de widgets. Com isso, consigo recuperar o bloc em qualquer widget filho.
   [Aqui](https://github.com/jonathastassi/counter_bloc_concepts/blob/main/lib/bloc_example/view/counter_bloc_page.dart#L13) tem um exemplo de uso.
 
-    Para recuperar o cubit/bloc em algum dos widgets filhos, basta fazer assim: ```context.read<CounterBloc>().add(CounterDecrementPressed());```
+  Para recuperar o cubit/bloc em algum dos widgets filhos, basta fazer assim: `context.read<CounterBloc>().add(CounterDecrementPressed());`
 
-    [Exemplo do context.read<CounterBloc>()](https://github.com/jonathastassi/counter_bloc_concepts/blob/main/lib/bloc_example/view/counter_bloc_view.dart#L47)
+  [Exemplo do context.read<CounterBloc>()](https://github.com/jonathastassi/counter_bloc_concepts/blob/main/lib/bloc_example/view/counter_bloc_view.dart#L47)
 
   [Documentação](https://bloclibrary.dev/#/flutterbloccoreconcepts?id=blocprovider)
 
@@ -34,3 +34,9 @@ Em resumo, a grande diferença dos 2, é que o cubit é orientado por funções 
 
 - [Bloc](https://github.com/jonathastassi/counter_bloc_concepts/blob/main/lib/bloc_example/bloc/counter_bloc.dart) - São criados eventos, onde é possível definir comportamentos de acordo com cada evento, e esses eventos podem manipular o estado
 - [Cubit](https://github.com/jonathastassi/counter_bloc_concepts/blob/main/lib/cubit_example/cubit/counter_cubit.dart) - São criados métodos, que tem objetivo de manipular o estado
+
+## Demonstração
+
+<div style="width: 100%; text-align: center;">
+<img src="https://github.com/jonathastassi/fipe_car_consult/blob/master/demonstration/counter.gif" alt="Demonstração">
+</div>
